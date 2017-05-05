@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:scrollbars="vertical">
+        <WebView
+            android:id="@+id/wv_choiness_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></WebView>
+
+    </ScrollView>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rec_comment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

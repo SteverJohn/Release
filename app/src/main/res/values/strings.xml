@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Release</string>
+    <string name="home">首页</string>
+    <string name="choiceness">精选</string>
+    <string name="life">生活</string>
+    <string name="mine">我的</string>
+    <string name="loading">数据加载中...</string>
+    <string name="login">登录</string>
+    <string name="input_email">请输入邮箱：</string>
+    <string name="register_text">若未注册请先注册</string>
+    <string name="input_password">请输入密码</string>
+    <string name="confirm">确认</string>
+    <string name="register">注册</string>
+    <string name="register_email">邮箱注册</string>
+    <string name="repeat_password">重复密码</string>
+    <string name="register_back">返回登录界面</string>
+    <string name="feedback">意见反馈</string>
+    <string name="btn_cancellation_login">注销登录</string>
+    <string name="tv_app_about">关于软件</string>
+    <string name="ly_about_toolbar_title">关于</string>
+    <string name="ly_about_tv_function_introduction">功能介绍</string>
+    <string name="ly_about_tv_feedback">意见反馈</string>
+    <string name="ly_about_tv_revisions">历史版本</string>
+    <string name="loginFast">立即登录</string>
+    <!--feedback-->
+    <string name="et_feedback_content">请输入您的反馈意见（字数500以内）</string>
+    <string name="btn_confirm_submission">确认提交</string>
+
+    <string name="read">阅读全文</string>
+    <string name="music_name">音乐名称</string>
+    <string name="author">薛之谦</string>
+    <string name="duration">时间间隔</string>
+    <string name="pause">暂停</string>
+    <string name="stop">停止</string>
+
+</resources>

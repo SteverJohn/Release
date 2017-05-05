@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="90dp">
+
+        <TextView
+            android:id="@+id/music_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/music_name"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/music_name"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/music_name"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="start"
+            android:text="@string/author"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp"
+            android:layout_alignEnd="@+id/music_name" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_music"
+            android:layout_width="@dimen/space_130"
+            android:layout_height="@dimen/space_100"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:padding="@dimen/space_6"
+            fresco:progressBarImage="@mipmap/icon_progress_bar"
+            fresco:progressBarImageScaleType="centerInside"
+            fresco:progressBarAutoRotateInterval="5000"
+            fresco:placeholderImage="@drawable/load_icon"
+            fresco:placeholderImageScaleType="fitCenter"
+            android:layout_alignBottom="@+id/author" />
+
+    </RelativeLayout>
+</LinearLayout>

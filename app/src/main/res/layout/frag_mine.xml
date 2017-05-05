@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_usercenter_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_userinfo_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:roundAsCircle="true"
+            fresco:progressBarImage="@mipmap/icon_progress_bar"
+            fresco:progressBarImageScaleType="centerInside"
+            fresco:progressBarAutoRotateInterval="5000"
+            />
+
+        <TextView
+            android:id="@+id/tv_usercenter_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/sdv_userinfo_icon"
+            android:singleLine="true"
+            android:text="用户名"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="#E9E9EA"/>
+    <TableLayout
+        android:id="@+id/tb_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_15"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="316dp"
+            android:layout_height="@dimen/space_50"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:drawableRight="@drawable/ic_arrow"
+            android:gravity="center_vertical"
+            android:text="@string/feedback"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_max" />
+    </TableLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="#E9E9EA"/>
+    <TableLayout
+        android:id="@+id/tb_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_15"
+        android:background="@color/white">
+
+    <TextView
+            android:layout_width="316dp"
+            android:layout_height="@dimen/space_50"
+            android:text="@string/tv_app_about"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_max"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:drawableRight="@drawable/ic_arrow"/>
+
+    </TableLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="#E9E9EA"/>
+    <Button
+        android:id="@+id/btn_usercenter_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/btn_cancellation_login"/>
+</LinearLayout>

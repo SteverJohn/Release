@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/rb_style"
+            android:checked="true"
+            android:drawableTop="@drawable/iocn_home_select"
+            android:text="@string/home"
+            android:textColor="@drawable/text_color_selector"  />
+
+        <RadioButton
+            android:id="@+id/rb_choiceness"
+            style="@style/rb_style"
+            android:drawableTop="@drawable/iocn_choiceness_select"
+            android:checked="false"
+            android:text="@string/choiceness"
+            android:textColor="@drawable/text_color_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_life"
+            android:drawableTop="@drawable/iocn_life_select"
+            style="@style/rb_style"
+            android:checked="false"
+            android:text="@string/life"
+            android:textColor="@drawable/text_color_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:drawableTop="@drawable/iocn_mine_select"
+            style="@style/rb_style"
+            android:checked="false"
+            android:text="@string/mine"
+            android:textColor="@drawable/text_color_selector" />
+    </RadioGroup>
+</LinearLayout>

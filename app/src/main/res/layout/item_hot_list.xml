@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    >
+
+        <LinearLayout
+            android:id="@+id/ll_hot_list"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_hot_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="热门榜单"
+                    android:textColor="@color/black"
+                    android:textSize="40sp" />
+        </LinearLayout>
+
+</FrameLayout>

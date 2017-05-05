@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:gravity="center">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_userinfo_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:roundAsCircle="true"
+        fresco:progressBarImage="@mipmap/icon_progress_bar"
+        fresco:progressBarImageScaleType="centerInside"
+        fresco:progressBarAutoRotateInterval="5000"
+        />
+    <Button
+    android:layout_margin="10dp"
+    android:id="@+id/loginFast"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/loginFast"
+    android:background="@drawable/rounded_button"/>
+</LinearLayout>

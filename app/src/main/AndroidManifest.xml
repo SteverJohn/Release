@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.niit.ydkf.release.release">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BIND_TELECOM_CONNECTION_SERVICE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /><!--上传文件必不可少的-->
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.activities.NewsDetailActivity"/>
+        <activity android:name=".view.activities.LoginActivity">
+
+        </activity>
+        <activity android:name=".view.activities.RegisterActivity"/>
+        <activity android:name=".view.activities.FeedBackActivity"/>
+        <activity android:name=".view.activities.AboutActivity"/>
+        <activity android:name=".view.activities.FunctionIntroductionActivity"/>
+        <activity android:name=".view.activities.RevisionsActivity"/>
+        <activity android:name=".view.activities.ChoinessDetailActivity"/>
+        <activity android:name=".view.activities.LifeActivity"/>
+        <activity android:name=".view.activities.HotListActivity"/>
+        <activity android:name=".view.activities.MusicActivity"/>
+        <activity android:name=".view.activities.JokesActivity"/>
+        <activity android:name=".view.activities.JokesDetailActivity"/>
+        <activity android:name=".view.activities.JestActivity"/>
+        <activity android:name=".view.activities.VideoActivity"
+         />
+        <activity android:name=".view.activities.VideoPlayActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".view.activities.HealthActivity"/>
+        <activity android:name=".view.activities.HealthDetailActivity"/>
+    </application>
+
+</manifest>
